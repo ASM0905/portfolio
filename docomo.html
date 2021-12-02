@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css"/>
+	<script src="jquery.mobile/jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+	
+	<script src="cordova.js"></script>	
+
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>	
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+
+		<div data-role="header" data-theme="b">
+			<h1>ntt docomo 紹介 </h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="ntt docomo.jpg" style="max-width: 100%; height: auto;" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">ntt docomo紹介</a></li>
+				<li><a href="#movie" data-rel="dialog">ntt docomo動画</a></li>
+				<li><a href="#gallery">ntt docomo写真</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>docomo 入社希望者　アンソンミン。</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">ホーム</a>			
+			<h1>ntt docomo紹介</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="ntt docomo2.jpg" style="max-width: 100%; height: auto;">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>ntt docomo 企業理念·ビジョン</h3>
+					<p>企業理念</p>
+					<li><a href="nttdocomo ideology.jpg"style="max-width: 100%; height: auto;" rel="external"><img src="ntt docomo ideology.jpg" style="max-width: 100%; height: auto;"/></a></li>	
+					<p>「新しいコミュニケーション文化の世界の創造」に向けて、個人の能力を最大限に生かし、お客さまに心から満足していただける、よりパーソナルなコミュニケーションの確立</p>
+
+					<p>ビジョン</p>
+					<li><a href="ntt docomo vision.png"style="max-width: 100%; height: auto;" rel="external"><img src="ntt docomo vision.png"style="max-width: 100%; height: auto;" /></a></li>
+
+				</div>
+				<div data-role="collapsible">
+					<h3>ntt docomo語源</h3>
+					<p>どこ(デ)も</p>
+
+						<p>Do Communications Over the Mobile Network</p>
+
+						<p>
+						移動通信網の上で実現されるコミュニケーション
+					</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>ntt docomo移動通信</h3>
+					<li><a href="docomo계약수.jpg"style="max-width: 100%; height: auto;" rel="external"><img src="docomo계약수.jpg"style="max-width: 100%; height: auto;" /></a></li>
+
+					<p>国内外の携帯電話や無線通信サービスを提供する日本一の企業</p>
+					<p>日本の移動通信会社の中で最も高いシェアを占めている企業</p>
+				</div>
+
+
+				<div data-role="collapsible" >
+					<h3>ntt docomo他の分野事業</h3>
+					<li><a href="ntt docomo scot.jpg"style="max-width: 100%; height: auto;" rel="external"><img src="ntt docomo scot.jpg"style="max-width: 100%; height: auto;" /></a></li>
+					<p>1.医療事業</p>
+					<p>DOCOMO 5G 技術を利用した 「モバイルスマート治療室 (SCOT)」で遠隔手術</p>
+					<p>
+						モバイルスマート治療室 (SCOT)で 高い精度の診断と迅速な治療で
+						災害地域や地方における問題点を解決し、死亡率を減少</p>
+
+					</p><li><a href="ntt docomo AR.JPG"style="max-width: 100%; height: auto;" rel="external"><img src="ntt docomo AR.JPG"style="max-width: 100%; height: auto;" /></a>
+	
+					<p>2.AR事業</p>
+					<p>ARで再現された4K高精細CG映像を用いながら、遠隔から現地にいる複数人と対話型のコミュニケーションを実現</p>
+					<p>複雑な構造や動きをCGで再現し、理解度アップに貢献</p>	
+					<p>博物館で新しい展示体験の提供（観光）</p>
+					<p>専門の先生やガイドの人材不足解消（教育/観光）</p>
+
+
+					<li><a href="ntt docomo online shop.jpg"style="max-width: 100%; height: auto;" rel="external"><img src="ntt docomo online shop.jpg"style="max-width: 100%; height: auto;" /></a>
+					<p>3.オンラインショップ事業</p>
+
+					<p>電話でもチャットからでも各種ご相談</p>
+					<p>手続きはオンラインでして最短5分で機種変更</p>
+					<p>どこでも利用できる便利性</p>
+				</div>
+
+			</div>
+		</div>
+
+		
+
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>docomo 入社希望者　アンソンミン。</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+
+
+
+			<h1>ntt docomo 動画</h1>
+		</div>
+		<div data-role="content" >
+
+			<div class="ui-bar ui-bar-e">ntt docomo 紹介動画</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/dvM24ImXE6w"></iframe></li><br/>
+
+			<div class="ui-bar ui-bar-e">ntt docomoオンラインショップ動画</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/4DVTU4e5NVE"></iframe></li><br/>
+
+			<div class="ui-bar ui-bar-e">ntt docomo医療動画</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/jBYrW4EFfK8"></iframe></li><br/>
+
+			<div class="ui-bar ui-bar-e">ntt docomo5G動画</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/2N9l7-GuXik"></iframe></li><br/>
+
+			<div class="ui-bar ui-bar-e">ntt docomo home5G動画</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/T4ypjWml0jY"></iframe></li><br/>
+
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+
+
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">ホーム</a>
+			<h1>ntt docomo写真		 </h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="ntt docomo.jpg" rel="external"><img src="ntt docomo.jpg" /></a></li>	
+
+				<li><a href="ntt docomo2.jpg" rel="external"><img src="ntt docomo2.jpg" /></a></li>	
+
+				<li><a href="ntt docomo logo.png" rel="external"><img src="ntt docomo logo.png" /></a></li>	
+
+				<li><a href="ntt docomo 5G.png" rel="external"><img src="ntt docomo 5G.png" /></a></li>
+
+				<li><a href="ntt docomo business.jpg" rel="external"><img src="ntt docomo business.jpg" /></a></li>	
+
+				<li><a href="ntt docomo hikari smt.jpg" rel="external"><img src="ntt docomo hikari smt.jpg" /></a></li>	
+
+				<li><a href="ntt docomo denpo2.jpg" rel="external"><img src="ntt docomo denpo2.jpg" /></a></li>	
+
+				<li><a href="ntt docomo online shop.jpg" rel="external"><img src="ntt docomo online shop.jpg" /></a></li>	
+				
+				<li><a href="ntt docomo online shop2.jpg" rel="external"><img src="ntt docomo online shop2.jpg" /></a></li>	
+
+				<li><a href="ntt docomo denpo.jpg" rel="external"><img src="ntt docomo denpo.jpg" /></a></li>   
+				
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>docomo 入社希望者　アンソンミン。</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
